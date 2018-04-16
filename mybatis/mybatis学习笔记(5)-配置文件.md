@@ -54,6 +54,9 @@ jdbc.password=123
 在sqlMapConfig.xml加载属性文件：
 
 ```xml
+<settings>
+	<setting name="logImpl" value="STDOUT_LOGGING" /><!--控制台打印SQL语句-->
+</settings>
 <properties resource="db.properties">
         <!--properties中还可以配置一些属性名和属性值  -->
         <!-- <property name="jdbc.driver" value=""/> -->
