@@ -52,7 +52,9 @@
      实际开发时使用mvc:annotation-driven
      -->
     <mvc:annotation-driven></mvc:annotation-driven>
-
+    注意：bean.xml文件头部（xsi:schemaLocation）加上  
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd  才有相关提示。
 ```
 
 ## 开发注解Handler
