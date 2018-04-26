@@ -53,6 +53,12 @@
      -->
     <mvc:annotation-driven></mvc:annotation-driven>
 
+注意：当<mvc:annotation-driven>在配置文件中报：cvc-complex-type.2.4.c: The matching wildcard is strict, but no declaration can be found for element 'mvc:annotation-driven'.
+解决办法：在bean.xml头部文件添加约束：
+	 xsi:schemaLocation中添加： http://www.springframework.org/schema/mvc
+				   http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+	
+
 ```
 
 ## 开发注解Handler
